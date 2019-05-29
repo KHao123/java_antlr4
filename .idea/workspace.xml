@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="534c7c25-0f90-4a81-8573-97ab7e78cbcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9.g4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9BaseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9BaseVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9Lexer.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9Lexer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9Lexer.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Java9Visitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NamingListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +25,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -75,6 +71,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Demo.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -112,7 +109,7 @@
     <property name="$PROJECT_DIR$/src/Java9.g4::/gen-listener" value="true" />
     <property name="$PROJECT_DIR$/src/Java9.g4::/gen-visitor" value="false" />
     <property name="$PROJECT_DIR$/src/Java9.g4::/output-dir" value="D:\java_antlr4\java_antlr4\src" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559143147786" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559145232468" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -166,6 +163,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -249,6 +247,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
