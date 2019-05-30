@@ -16,6 +16,7 @@ public class Main {
         CommonTokenStream tokens=new CommonTokenStream(lexer);
         Java9Parser parser = new Java9Parser(tokens);
         ParseTree tree = parser.compilationUnit();
+        //System.out.println(tree.toStringTree(parser));
 
         ParseTreeWalker walker = new ParseTreeWalker();
         NamingListener naming=new NamingListener(parser);
