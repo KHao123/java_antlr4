@@ -28,7 +28,7 @@ public class Main {
         ParseTreeWalker walker = new ParseTreeWalker();
         Standardizer sta=new Standardizer(tokens);
         walker.walk(sta,tree);
-        System.out.println(sta.rewriter.getText());
+        //System.out.pri ntln(sta.rewriter.getText());
 
         input=CharStreams.fromString(sta.rewriter.getText());
         lexer=new JavaLexer(input);

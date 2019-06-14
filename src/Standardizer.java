@@ -352,4 +352,17 @@ public class Standardizer extends JavaParserBaseListener {
         }
         return sb.toString();
     }
+    @Override
+    public void visitTerminal(TerminalNode node) {
+        Token token = node.getSymbol();
+        if(token.getText().equals("<EOF>")){
+            return;
+        }
+        int index = token.getTokenIndex();
+        index++;
+        token = tokens.get(index);
+        if(token.getText().trim().length()==0){
+            rewriter.replace(token," ");
+        }
+    }
 }
