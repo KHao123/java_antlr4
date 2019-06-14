@@ -1,6 +1,31 @@
 ﻿# java_antlr4
 
-java Main Demo.java
+Java代码重构
+
+简介
+
+通过Antlr4编写的Java语法，生成Java语法分析程序，通过分析程序提供的接口，
+利用监听器构造一个代码重构程序。
+
+
+目录介绍
+
+
+
+
+
+快速开始
+
+#：java Main test.java
+
+
+测试
+
+
+
+开发者
+
+讨论
 
 以实现功能：
 
