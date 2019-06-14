@@ -97,6 +97,42 @@ public class Standardizer2 extends JavaParserBaseListener {
                     rewriter.insertBefore(t, s);
                 }
             }
+        } else if(node.getText().equals("else")){
+            Token t=node.getSymbol();
+            int index = t.getTokenIndex();
+            index--;
+            t = tokens.get(index);
+            if (t.getText().trim().length() == 0) {
+                rewriter.replace(index, " ");
+            } else if (t.getText().equals("}")) {
+
+            } else {
+                rewriter.insertBefore(t, " ");
+            }
         }
     }
+
+
+    @Override
+    public void enterClassBodyDeclaration(JavaParser.ClassBodyDeclarationContext ctx) {
+        JavaParser.MemberDeclarationContext md = ctx.memberDeclaration();
+        JavaParser.MethodDeclarationContext med = md.methodDeclaration();
+        if(med!=null){
+            Token token=ctx.getStart();
+            String s = "\n";
+            for (int i = 1; i <= tabCnt; i++) {
+                s += "\t";
+            }
+            rewriter.insertBefore(token,s);
+        }
+    }
+
+//    @Override
+//    public void enterStatement(JavaParser.StatementContext ctx) {
+//        Token token = ctx.getStart();
+//        if (token.getText().equals("if")) {
+//
+//        }
+//    }
+
 }
