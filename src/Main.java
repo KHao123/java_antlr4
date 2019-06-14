@@ -28,8 +28,25 @@ public class Main {
         ParseTreeWalker walker = new ParseTreeWalker();
         Standardizer sta=new Standardizer(tokens);
         walker.walk(sta,tree);
-        System.out.println();
         System.out.println(sta.rewriter.getText());
+
+        input=CharStreams.fromString(sta.rewriter.getText());
+        lexer=new JavaLexer(input);
+        tokens=new CommonTokenStream(lexer);
+        parser = new JavaParser(tokens);
+        tree = parser.compilationUnit();
+        walker = new ParseTreeWalker();
+        Standardizer2 sta2=new Standardizer2(tokens);
+        walker.walk(sta2,tree);
+        System.out.println(sta2.rewriter.getText());
+
+
+
+
+
+
+
+
         while(!warning.isEmpty()){
             CommonToken t=(CommonToken) warning.poll();
             System.out.println("nonstandard name in line "+t.getLine()+" : "+t.getText());
