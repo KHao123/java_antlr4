@@ -87,10 +87,12 @@ public class aas_qweq_sad {
 public class DeMo{
         final int ABC = 0;
         int tT;
+
         void funAsd(int i){
                 int j = i;
         }
         int ad;
+
         public static void main0(String[] args){
                 AasQweqSad a = new AasQweqSad();
                 funAsd(3);
